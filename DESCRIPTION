@@ -1,0 +1,16 @@
+Package: ptools
+Title: A collection of awesome R functions that enable production of publish ready figures
+Version: 0.1
+Authors@R: 
+    person(given = "Yang", family = "Du", role = c("aut", "cre"),email = "dyang627@gmail.com")
+Description: The aim of ptool is to collect awesome R functions that enable the production of 
+    publication ready plots, plot functions are mainly used to visualize biological data in cancer 
+    omics research.
+License: GPL (>= 3)
+Encoding: UTF-8
+LazyData: true
+Roxygen: list(markdown = TRUE)
+RoxygenNote: 7.1.1
+Imports: 
+    ggplot2,
+    ggthemes
