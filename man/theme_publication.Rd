@@ -14,3 +14,10 @@ theme_publication(base_size = 14, base_family = "sans")
 \description{
 A ggplot2 complete theme for make publication ready figures
 }
+\examples{
+library(ggplot2)
+ggplot(mtcars, aes(mpg, disp)) + geom_point() + theme_publication()
+}
+\author{
+Koundinya Desiraju (https://github.com/koundy/ggplot_theme_Publication)
+}
