@@ -8,3 +8,17 @@ dark_bg_colors <- function() {
            "#fed9a6", "#ffffcc", "#e5d8bd", "#fddaec", "#f2f2f2"))
 
 }
+
+# remove diagonal of a matrix
+rmDiag <- function(x) {
+  v <- vector()
+  for (i in seq_len(nrow(x))) {
+    for (j in seq_len(ncol(x))) {
+      if (i == j) {
+        next
+      }
+      v <- c(v, x[i, j])
+    }
+  }
+  return(v)
+}

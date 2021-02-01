@@ -52,7 +52,7 @@ theme_publication <- function(base_size = 14, base_family = "sans") {
 #' @export
 #' @examples 
 #' library(ggplot2)
-#' ggplot(mtcars, aes(mpg, disp)) + geom_point() + theme_publication()
+#' ggplot(mtcars, aes(mpg, disp)) + geom_point() + theme_dark_blue()
 #' @author Koundinya Desiraju (https://github.com/koundy/ggplot_theme_Publication)
 #' @import ggplot2
 #' @import ggthemes
