@@ -1,7 +1,9 @@
 #' classic density plot
 #'
 #' Plot several density plot in one figure.
-#'
+#' 
+#' @author Yuhao Xie
+#' 
 #' @param x a numeric vector (representing one group), or a list containing
 #' several numeric vectors, with each representing a group.
 #' If it is a list, its names determines the group names
@@ -15,7 +17,6 @@
 #'
 #' @export
 #'
-#' 
 #' @importFrom grDevices adjustcolor
 #' @importFrom stats density runif
 #' 
@@ -94,6 +95,8 @@ densityByGroup.classic <- function(x, col = NULL, alpha = .5,
 #' Advanced density plot
 #'
 #' Add boxplot below density plot for each group.
+#' 
+#' @author Yuhao Xie
 #'
 #' @param x a numeric vector (representing one group), or a list containing
 #' several numeric vectors, with each representing a group.
@@ -106,7 +109,6 @@ densityByGroup.classic <- function(x, col = NULL, alpha = .5,
 #' names of the list are used as argument names.
 #'
 #' @export
-#'
 #' @examples
 #' xls <- list(
 #'     male = rnorm(100, 170, 5),

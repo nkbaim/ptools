@@ -17,4 +17,5 @@ Imports:
     scales,
     graphics,
     stats,
-    grDevices
+    grDevices,
+    maftools

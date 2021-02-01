@@ -40,3 +40,6 @@ xls <- list(
 print(str(xls))
 densityByGroup.advance(xls, xlab = "Height (cm)", main = "Female vs Male")
 }
+\author{
+Yuhao Xie
+}

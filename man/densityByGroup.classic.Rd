@@ -42,3 +42,6 @@ print(str(xls))
 #densityByGroup.classic(xls)
 
 }
+\author{
+Yuhao Xie
+}

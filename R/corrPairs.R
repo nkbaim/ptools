@@ -1,7 +1,10 @@
 
 #' A pairs visualization of a correlation matrix.
-#' @description A graphical display of a correlation matrix, based on \code{pairs()} function
+#' @description A graphical display of a correlation matrix based on \code{pairs()} function, with the upper panel shows the scatter plot
+#' of two variavles, and the lower panel shows the coefficients of correlation.
 #'
+#' @author Yang Du
+#' 
 #' @param m a data matrix, each sample is represent by a column.
 #' @param cor.method a character string indicating which correlation coefficient (or covariance) is to be computed. 
 #' One of "pearson" (default), "kendall", or "spearman": can be abbreviated.
@@ -24,8 +27,9 @@
 #' @importFrom stats cor
 #' @importFrom graphics pairs
 #' @export
-#'
+#' 
 #' @examples
+#' set.seed(123)
 #' x <- rnorm(n = 100, mean = 10, sd = 2)
 #' df <- data.frame(x = x + rnorm(100))
 #' for (i in 1:9) {
@@ -33,7 +37,7 @@
 #' }
 #' colnames(df) <- paste0(LETTERS[1:10], 1:10)
 #'
-#' corrPairs(df, axt = FALSE)
+#' corrPairs(df, cex.point = 0.5, cex.label = 1.5)
 corrPairs <- function(m, cor.method = c("pearson", "kendall", "spearman"), colors = colorRampPalette(c("#CCCCCC", "#EF3B3C"))(50),
                       cor.use = c("all.obs", "complete.obs", "pairwise.complete.obs", "everything", "na.or.complete"), max.col = NULL,
                       min.col = NULL, axt = FALSE, cex.coeff = NULL, cex.point = 1, cex.labels = 1, cex.main = 1, line.main = 3, ...) {

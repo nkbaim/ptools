@@ -53,9 +53,11 @@ You may want to specify oma when changing line.main.}
 \item{...}{other parameters pass to \code{pairs()} function}
 }
 \description{
-A graphical display of a correlation matrix, based on \code{pairs()} function
+A graphical display of a correlation matrix based on \code{pairs()} function, with the upper panel shows the scatter plot
+of two variavles, and the lower panel shows the coefficients of correlation.
 }
 \examples{
+set.seed(123)
 x <- rnorm(n = 100, mean = 10, sd = 2)
 df <- data.frame(x = x + rnorm(100))
 for (i in 1:9) {
@@ -63,5 +65,8 @@ for (i in 1:9) {
 }
 colnames(df) <- paste0(LETTERS[1:10], 1:10)
 
-corrPairs(df, axt = FALSE)
+corrPairs(df, cex.point = 0.5, cex.label = 1.5)
+}
+\author{
+Yang Du
 }
